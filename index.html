@@ -1,50 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Super Pixel — Editor</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./Super Pixel — Editor_files/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="brand">
       <!-- logo simples em SVG (pixel gem) -->
-      <svg class="logo" viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
-        <rect x="6" y="18" width="52" height="28" rx="4" ry="4" fill="#f2d1b3"/>
-        <path d="M32 6 L50 18 L32 30 L14 18 Z" fill="#c98f6d"/>
-        <rect x="20" y="26" width="24" height="16" fill="#e6aa7f"/>
-        <rect x="28" y="34" width="8" height="4" fill="#a05b3a"/>
-      </svg>
-      <h1>Super Pixel</h1>
-    </div>
+      
+
+        <rect x="6" y="18" width="52" height="50" rx="4" ry="4" fill="#f2d1b3">
+        <path d="M32 6 L50 18 L32 30 L14 18 Z" fill="#c98f6d">
+        <rect x="20" y="26" width="24" height="16" fill="#e6aa7f">
+        <rect x="28" y="34" width="8" height="4" fill="#a05b3a">
+      
+      <h1>super Pixel</h1>
+    </rect></rect></path></rect></div>
 
     <nav class="header-controls">
       <label class="small">Canvas:
         <select id="canvas-size">
           <option value="16">16×16</option>
           <option value="24">24×24</option>
-          <option value="32" selected>32×32</option>
+          <option value="32" selected="">32×32</option>
           <option value="48">48×48</option>
           <option value="64">64×64</option>
         </select>
       </label>
 
       <label class="small">Zoom (%):
-    <input id="zoom" type="number" min="10" max="800" value="100" step="5" />
+    <input id="zoom" type="number" min="10" max="800" value="100" step="5">
 </label>
 
 
       <button id="toggle-grid" class="btn">Grade: ON</button>
-      <button id="undo" class="btn">Undo</button>
-      <button id="redo" class="btn">Redo</button>
+      <button id="undo" class="btn" disabled="">Undo</button>
+      <button id="redo" class="btn" disabled="">Redo</button>
     </nav>
   </header>
 
   <main class="main-layout">
     <section class="editor-area">
       <div id="canvas-wrap" class="canvas-wrap">
-        <canvas id="screen" tabindex="0"></canvas>
+        <canvas id="screen" tabindex="0" width="736" height="736" style="width: 736px; height: 736px;"></canvas>
       </div>
 
       <div class="controls-bottom">
@@ -53,17 +54,17 @@
           <button id="export-jpg" class="btn">Exportar JPG</button>
           <button id="export-webp" class="btn">Exportar WEBP</button>
 
-          <label class="import-btn btn">Importar .json
-            <input id="import-json" type="file" accept=".json" />
-          </label>
+
+            
+          
         </div>
 
         <div class="right-actions">
           <label class="small">Fundo:
-            <input id="bg-color" type="color" value="#ffffff" />
+            <input id="bg-color" type="color" value="#ffffff">
           </label>
           <label class="small">Transparente:
-            <input id="transparent" type="checkbox" checked />
+            <input id="transparent" type="checkbox" checked="">
           </label>
         </div>
       </div>
@@ -95,17 +96,17 @@
       </section>
 
       <section class="panel palette">
-        <h2>Paleta & Wheel</h2>
+        <h2>Paleta &amp; Wheel</h2>
 
         <div class="wheel-wrap">
           <canvas id="color-wheel" width="220" height="220" title="Arraste para escolher a cor"></canvas>
-          <div id="wheel-indicator" class="wheel-indicator"></div>
+          <div id="wheel-indicator" class="wheel-indicator" style="left: 95px; top: 0px; transform: translate(-15px, -110px) translate(-50%, -50%);"></div>
         </div>
 
-        <div class="preset-row" id="preset-colors"></div>
+        <div class="preset-row" id="preset-colors"><div class="color-swatch" title="#000000" style="background: rgb(0, 0, 0);"></div><div class="color-swatch" title="#ffffff" style="background: rgb(255, 255, 255);"></div><div class="color-swatch" title="#7f7f7f" style="background: rgb(127, 127, 127);"></div><div class="color-swatch" title="#bcbcbc" style="background: rgb(188, 188, 188);"></div><div class="color-swatch" title="#f0a07a" style="background: rgb(240, 160, 122);"></div><div class="color-swatch" title="#c77a4a" style="background: rgb(199, 122, 74);"></div><div class="color-swatch" title="#d99b6c" style="background: rgb(217, 155, 108);"></div><div class="color-swatch" title="#f3d6b6" style="background: rgb(243, 214, 182);"></div><div class="color-swatch" title="#9fb889" style="background: rgb(159, 184, 137);"></div><div class="color-swatch" title="#5aa286" style="background: rgb(90, 162, 134);"></div><div class="color-swatch" title="#4f7e8a" style="background: rgb(79, 126, 138);"></div><div class="color-swatch" title="#3f5766" style="background: rgb(63, 87, 102);"></div><div class="color-swatch" title="#2e3f55" style="background: rgb(46, 63, 85);"></div><div class="color-swatch" title="#8fbcd6" style="background: rgb(143, 188, 214);"></div><div class="color-swatch" title="#d6b3d1" style="background: rgb(214, 179, 209);"></div><div class="color-swatch" title="#ffb6b6" style="background: rgb(255, 182, 182);"></div><div class="color-swatch" title="#ffdab3" style="background: rgb(255, 218, 179);"></div><div class="color-swatch" title="#ffd2b0" style="background: rgb(255, 210, 176);"></div><div class="color-swatch" title="#f7d1c4" style="background: rgb(247, 209, 196);"></div><div class="color-swatch" title="#cfeaea" style="background: rgb(207, 234, 234);"></div><div class="color-swatch" title="#e8f7e7" style="background: rgb(232, 247, 231);"></div><div class="color-swatch" title="#cfe0ff" style="background: rgb(207, 224, 255);"></div><div class="color-swatch" title="#fff0c6" style="background: rgb(255, 240, 198);"></div><div class="color-swatch" title="#efe6ff" style="background: rgb(239, 230, 255);"></div><div class="color-swatch" title="#d7a5a5" style="background: rgb(215, 165, 165);"></div><div class="color-swatch" title="#9ab6d9" style="background: rgb(154, 182, 217);"></div><div class="color-swatch" title="#9cf6ff" style="background: rgb(156, 246, 255);"></div><div class="color-swatch" title="#caffe0" style="background: rgb(202, 255, 224);"></div><div class="color-swatch" title="#ffd77a" style="background: rgb(255, 215, 122);"></div><div class="color-swatch" title="#ffb6b6" style="background: rgb(255, 182, 182);"></div><div class="color-swatch" title="#ffd6a5" style="background: rgb(255, 214, 165);"></div></div>
 
         <div class="custom">
-          <input id="color-picker" type="color" value="#000000" />
+          <input id="color-picker" type="color" value="#000000">
           <button id="add-color" class="btn small">+</button>
           <button id="clear-palette" class="btn small">Limpar</button>
         </div>
@@ -113,7 +114,7 @@
 
       <section class="panel project">
         <h2>Projeto</h2>
-        <label>Título: <input id="proj-name" placeholder="meu_pixel" /></label>
+        <label>Título: <input id="proj-name" placeholder="meu_pixel"></label>
         <button id="clear-canvas" class="btn">Limpar</button>
       </section>
 
@@ -123,6 +124,45 @@
     </aside>
   </main>
 
-  <script src="script.js"></script>
-</body>
-</html>
+  <script src="./Super Pixel — Editor_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
